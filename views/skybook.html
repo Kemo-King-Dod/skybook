@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+    <link rel="stylesheet" href="css/skybook.css">
+    <title>skybook</title>
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a class="logo-link" href="">
+            <img src="image/casebook.png">
+        </a>
+    </div>
+    <div class="search"><input type="text" onkeyup="Search(this.value)" id="search" placeholder="search..."></div>
+    <nav>
+        <ul>
+            <li><a href=""><i class="fas fa-home"></i></a></li>
+            <li><a href=""><i class="fas fa-newspaper"></i></a></li>
+            <li><a href=""><i class="fas fa-video"></i></a></li>
+            <li><a href=""><i class="fas fa-user-group"></i></a></li>
+        </ul>
+    </nav>
+    
+    <div class="header-option">
+            <ul>
+            <li><i class="fas fa-user "></i></li>
+            <li><i class="fas fa-cog"></i></li>
+            <li> <i class="fas fa-bars"></i></li>
+        </ul></div>
+    
+    </header>
+    <div class="continer">
+    
+        
+    
+    <div class="addArtical">
+        <div class="addArticalimg">
+            <img src="image/Screenshot 2023-12-19 221126.png" id="pf">
+        </div>
+        <div class="addArticalP">
+            <form action="/addartical" method="post">
+                <input type="text" class="say" id="post" name="artical" placeholder="ماذا تريد أن تقول؟">
+                <button type="submit" id="submit" onclick="Show()"><img src="images/navigation/paper-plane.png"></button>
+            </form>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <div id="content">
+    
+    </div>
+    <script src="js/skybook.js"></script>
+</body>
+</html>
